@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
-    
+
     <meta name="theme-color" content="#2091F9">
     <meta name="title" content="">
     <!-- Primary Meta Tags -->
-<title>Portafolio Jhon Sebastian Zambrano</title>
-<meta name="title" content="Portafolio Jhon Sebastian Zambrano">
-<meta name="description" content="Hola, soy un desarrollar de software, apacionado por el Frontend">
+    <title>Portafolio Jhon Sebastian Zambrano</title>
+    <meta name="title" content="Portafolio Jhon Sebastian Zambrano">
+    <meta name="description" content="Hola, soy un desarrollar de software, apacionado por el Frontend">
 
 
 </head>
@@ -25,10 +25,7 @@
     <header class="hero">
         <nav class="nav container">
             <div class="nav__logo">
-                
-                
                 <img src="./Images/logoportfoli.png" class="nav__logo--page">
-               
                 <h2 class="nav__title">Portafolio</h2>
             </div>
 
@@ -37,13 +34,13 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#quiensoy" class="nav__links">Acerca de mi</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Blog</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contact" class="nav__links" >Contacto</a>
                 </li>
 
                 <img src="./Images/close.svg" class="nav__close" alt="">
@@ -56,9 +53,9 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Cambios pagina web</h1>
-            <p class="hero__paragraph"> Hola soy Jhon Sebastian</p>
-            <a href="#" class="cta">Comienza ahora</a>
+            <h1 class="hero__title">Diseño</h1>
+            <h1 class="hero__paragraph"> Desarrollo</h1>
+            <a href="#" class="cta__hero">Conoceme</a>
         </section>
     </header>
 
@@ -88,15 +85,25 @@
         </section>
 
         <section class="knowledge">
-            <div class="knowledge__container container">
+            <div class="knowledge__container container" id="quiensoy">
                 <div class="knowledge__text">
-                    <h2 class="subtitle">Curso completo de CSS3 </h2>
-                    <p class="knowledge__paragraph">Lorem ipsum dolor sit asdasdwda dwadadwdwadawdwdawdfwf qwqwd qdqwd
-                        qwdq dadwadwda </p>
-                    <a href="#" class="cta">Entra al curso </a>
+                    <h2 class="subtitle__knowledge">¿Quien Soy?</h2>
+                    <p class="knowledge__paragraph"> ¡Hola! Mi nombre es Jhon Sebastian Zambrano y soy un estudiante
+                        apasionado de
+                        ingeniería de sistemas y computacion en busca de oportunidades para aplicar y desarrollar mis
+                        conocimientos en
+                        un entorno laboral desafiante. Mi objetivo es contribuir al crecimiento y éxito de la empresa a
+                        través de la implementación de soluciones tecnológicas innovadoras. <br>
+
+                        Durante mi formación académica, he adquirido una sólida base en áreas clave como programación,
+                        bases de datos, redes, sistemas operativos y desarrollo. Además, he trabajado en proyectos de
+                        desarrollo de
+                        software donde he podido aplicar mis habilidades para resolver problemas complejos y colaborar
+                        eficientemente en equipos multidisciplinarios.</p>
+                    <a href="#" class="cta">Contacto</a>
                 </div>
                 <figure class="knowledge__picture">
-                    <img src="./Images/pcpica.jpg" class="knowledge__img">
+                    <img src="./Images/Foto hoja de vida.jpg" class="knowledge__img">
                 </figure>
             </div>
         </section>
@@ -107,7 +114,7 @@
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__text">
-                         <h2 class="subtitle">Mi nombre es Juanito, <span class="testimony__course">Estudiante de Css
+                        <h2 class="subtitle">Mi nombre es Juanito, <span class="testimony__course">Estudiante de Css
                                 1</span></h2>
                         <p class="testimony__review">Hola soy esdutudaiante de Css</p>
                     </div>
@@ -161,30 +168,32 @@
         <section class="footer">
             <section class="footer__container container">
                 <nav class="nav nav--footer">
-                    <h2 class="footer__title">Curso CSS.</h2>
-                    <ul class="nav__link nav__link--footer" >
+                    <h2 class="footer__title">Contacto.</h2>
+                    <ul class="nav__link nav__link--footer">
                         <li class="nav__items">
                             <a href="#" class="nav__links">Inicio</a>
                         </li>
                         <li class="nav__items">
-                            <a href="#" class="nav__links">Acerca de</a>
+                            <a href="#quiensoy" class="nav__links">Acerca de mi</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Blog</a>
                         </li>
                         <li class="nav__items">
                             <a href="#" class="nav__links">Contacto</a>
                         </li>
-                        <li class="nav__items">
-                            <a href="#" class="nav__links">Blog</a>
-                        </li>         
                     </ul>
-                </nav>            
+                </nav>
             </section>
 
-            <section class="footer__copy container">
+            <section class="footer__copy container" id="contact">
                 <div class="footer_social">
-                    <a href="#" class="footer__icons" ><img src="Images/github.svg" class="footer__img"></a>
-                    <a href="#" class="footer__icons" ><img src="Images/linkedln.svg" class="footer__img"></a>
-                    <a href="#" class="footer__icons" ><img src="Images/whatsapp.svg" class="footer__img"></a>
-                    <a href="#" class="footer__icons" ><img src="Images/correo.svg" class="footer__img"></a>
+                    <a href="#contacto"></a>
+                    <a href="https://www.linkedin.com/in/jhon-sebastian-zambrano-ariza-5b67a8266"
+                        class="footer__icons"><img src="Images/linkedln.svg" class="footer__img"></a>
+                    <a href="https://github.com/llSebassll" class="footer__icons"><img src="Images/github.svg" class="footer__img"></a>
+                    <a href="#" class="footer__icons"><img src="Images/correo.svg" class="footer__img"></a>
+                    <a href="https://wa.me/+573127838827" class="footer__icons"><img src="Images/whatsapp.svg" class="footer__img"></a>
                 </div>
                 <h3 class="footer__copyright">Derechos reservados &copy; Sebastian Zambrano</h3>
             </section>
