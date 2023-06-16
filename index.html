@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
 
@@ -23,10 +23,12 @@
 <body>
 
     <header class="hero">
+        
         <nav class="nav container">
+            <div class="gradient"></div>
             <div class="nav__logo">
                 <img src="./Images/polo.png" class="nav__logo--page">
-                <h2 class="nav__title">Portafolio</h2>
+                <!-- <h2 class="nav__title">Portafolio</h2> -->
             </div>
 
             <ul class="nav__link nav__link--menu">
@@ -34,10 +36,10 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#quiensoy" class="nav__links">Acerca de mi</a>
+                    <a href="#skills" class="nav__links">Habilidades</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#myproyect" class="nav__links">Mis Proyectos</a>
+                    <a href="#quiensoy" class="nav__links">Acerca de mi</a>
                 </li>
                 <li class="nav__items">
                     <a href="#contact" class="nav__links">Contacto</a>
@@ -53,8 +55,8 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Diseño</h1>
-            <h1 class="hero__title"> Desarrollo</h1>
+            <h1 class="hero__title">Hola, soy Sebas.</h1>
+            <h1 class="hero__title">Un desarrollador.</h1>
             <a href="#quiensoy" class="cta__hero">Conóceme</a>
         </section>
 
@@ -62,19 +64,52 @@
 
     <main>
 
-        <section class="about"> 
-            <div class="cover"> 
-                <div class="bg_color"></div>
-                <div class="wave w1"></div>
-                <div class="wave w2"></div>
+        <section class="about" id="skills">
+            <h2 class="subtitle" >Tengo habilidades en:</h2>
+
+            <div class="wrapper">
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/css-3.png" alt="img__logo"></div>
+                        <h2>CSS</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/html-5.png" alt="img__logo"></div>
+                        <h2>HTML</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/js.png" alt="img__logo"></div>
+                        <h2>JAVASCRIPT</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/java.png" alt="img__logo"></div>
+                        <h2>JAVA</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/mysql.png" alt="img__logo"></div>
+                        <h2>MYSQL</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/piton.png" alt="img__logo"></div>
+                        <h2>PYTHON</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/github.png" alt="img__logo"></div>
+                        <h2>GITHUB</h2>
+                    </li>
+                    <li class="card">
+                        <div class="img__logo"> <img src="./Images/carrucel/angular.png" alt="img__logo"></div>
+                        <h2>ANGULAR</h2>
+                    </li>
+                </ul>
             </div>
 
-            <section class="about__container container"></section>
-            <h2 class="subtitle"> Que aprenderas con este curso</h2>
+            <!-- <section class="about__container container"></section>
+            <h2 class="subtitle">Mis habilidades son las siguientes</h2>
             <p class="about__paragraph">Todo lo que es obligatorio en Css</p>
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="./Images/shape.svg" class="about__icons">
+                    <img src="./Images/java.svg" class="about__icons">
                     <h3 class="about__title">Css Lauyouts</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet</p>
                 </article>
@@ -90,11 +125,11 @@
                     <h3 class="about__title">Sass</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet</p>
                 </article>
-            </div>
+            </div> -->
         </section>
 
-        <section class="knowledge">
-            <div class="knowledge__container container" id="quiensoy">
+        <section class="knowledge" id="quiensoy">
+            <div class="knowledge__container container" >
                 <div class="knowledge__text">
                     <h2 class="subtitle__knowledge">¿Quien Soy?</h2>
                     <p class="knowledge__paragraph"> ¡Hola! Mi nombre es Jhon Sebastian Zambrano y soy un estudiante
@@ -102,14 +137,9 @@
                         ingeniería de sistemas y computacion en busca de oportunidades para aplicar y desarrollar mis
                         conocimientos en
                         un entorno laboral desafiante. Mi objetivo es contribuir al crecimiento y éxito de la empresa a
-                        través de la implementación de soluciones tecnológicas innovadoras. <br> <br>
+                        través de la implementación de soluciones tecnológicas innovadoras.
 
-                        Durante mi formación académica, he adquirido una sólida base en áreas clave como programación,
-                        bases de datos, redes, sistemas operativos y desarrollo. Además, he trabajado en proyectos de
-                        desarrollo de
-                        software donde he podido aplicar mis habilidades para resolver problemas complejos y colaborar
-                        eficientemente en equipos multidisciplinarios.</p>
-                    <a href="#" class="cta">Contacto</a>
+                        <!-- <a href="#" class="cta">Contacto</a> -->
                 </div>
                 <figure class="knowledge__picture">
                     <img src="./Images/Foto hoja de vida.jpg" class="knowledge__img">
@@ -174,7 +204,7 @@
 
         </section> -->
 
-        <section class="footer">
+        <section class="footer" id="contact">
             <section class="footer__container container">
                 <nav class="nav nav--footer">
                     <h2 class="footer__title">Contacto.</h2>
@@ -182,12 +212,12 @@
                         <li class="nav__items">
                             <a href="#" class="nav__linksfo">Inicio</a>
                         </li>
-                        <li class="nav__items">
+                        <li class="nav__items" id="quiensoy">
                             <a href="#quiensoy" class="nav__linksfo">Acerca de mi</a>
                         </li>
-                        <li class="nav__items">
+                        <!-- <li class="nav__items">
                             <a href="#myproyect" class="nav__linksfo">Mis Proyectos</a>
-                        </li>
+                        </li> -->
                         <li class="nav__items">
                             <a href="#contact" class="nav__linksfo">Contacto</a>
                         </li>
@@ -195,7 +225,7 @@
                 </nav>
             </section>
 
-            <section class="footer__copy container" id="contact">
+            <section class="footer__copy container" >
                 <div class="footer__social">
 
                     <a href="https://www.linkedin.com/in/jhon-sebastian-zambrano-ariza-5b67a8266"
