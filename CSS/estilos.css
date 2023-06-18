@@ -400,7 +400,7 @@ body {
     /* display: block; */
     /* padding: 13px 30px; */
     margin: 0 auto;
-
+    pointer-events: none;
 }
 
 .knowledge__paragraph {
