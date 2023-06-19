@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Sans:wght@400;700&family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 
 :root {
     --padding-container: 100px 0;
     --color-title: #001A49;
+
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .container {
     width: 100%;
@@ -42,20 +51,7 @@ body {
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-color: #80ed99;
-
-
-    /* background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
-	background-size: 180% 180%;
-	animation: gradient-animation 6s ease infinite; */
-}
-
-@keyframes hero {
-
-        0%{ background-position: 0 50%;}
-        50%{ background-position: 100% 50%;}
-        100%{ background-position: 0 50%;}
-
+    background-color:  var(--bg-color);
 }
 
 
@@ -66,7 +62,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    
+    background-color: #323946;
 }
 
 
@@ -76,37 +72,33 @@ body {
     height: 70px;
     margin: 0auto;
     display: flex;
-    /* background-color: rgb(255, 255, 255);
-    padding: 10px 10px;
-    border-radius: 30px; */
     position: relative;
     align-items: center;
     
-
 }
 
-
-.nav__logo--page {
+/* .nav__logo--page {
     width: auto;
     height: auto;
     max-width: 70px;
     max-height: 70px;
     justify-content: center;
     pointer-events: none;
-}
-
-/* .nav__logo:hover{
-    background-color: #c90000;
-    box-shadow: 200 10 20px #c90000;
-    transform: scale(1.2);
-
+    background-color: #DAD7CD;
+    border-radius: 5px;
 } */
+
 
 .nav__title {
     justify-items: center;
     font-weight: 1000;
-    color: #02010a;
-    font-family:'concert';
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav__title b{
+    color: var(--text-color);
 }
 
 .nav__link {
@@ -116,46 +108,41 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
-     
-    /* margin: 5%;
-    width: 450px;
-    display: grid;
-    flex-direction: row;
-    list-style: none;
-    padding: 25px 0;
-    border-radius: 25px;
-    border: 0.1px solid #040000;
-    box-shadow: 0 4px 8px #00000d, 0 6x 20px 0 rgb(0, 0, 0.19); */
+
 }
 
 .nav__items {
     list-style: none;
     margin: auto;
-    color: #02010a ;
+    color: #02010a;
 
 }
 
-.nav__items::after{
+.nav__items::after {
     display: block;
 }
 
-.nav__items:hover{
-    border-bottom: #02010a   ;
-    scale: 1.2;
-    border-bottom: 1px solid #02010a ;
+.nav__items:hover {
+    border-bottom: 2px solid #0ef ;
+   
 }
 
 
 .nav__links {
-    color: #02010a;
+    color: #DAD7CD;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav__links:hover {
+    color: #0ef  ;
 }
 
 
 
 .nav__menu {
-   
+
     margin-left: auto;
     cursor: pointer;
     display: none;
@@ -188,9 +175,10 @@ body {
     position: relative;
     margin: auto;
     text-align: center;
-    color: #02010a;
-    font-family: 'Concert One', cursive;
-    font-size: 8vw;
+    color: var(--text-color);
+    /* font-family: 'Concert One', cursive; */
+    font-size: 7vw;
+    font-weight: 600 ;
 }
 
 .hero__paragraph {
@@ -202,27 +190,33 @@ body {
 }
 
 .cta__hero {
-    display: grid;
+
+    display: flex;
     padding: 13px 30px;
     width: 200px;
     margin: 0 auto;
-    background-color: #eff7f6;
+    background-color: var(--text-color);
+    position: relative;
     color: #02010a;
     border-radius: 32px;
-    align-content: center;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
+    align-items: center;
     margin-top: 30px;
     font-size: 1.5rem;
+    border: 2px solid var(--main-color) ;
+    cursor: pointer;
 }
 
 .cta__hero:hover {
-    background-color: #5b2a86;
-    box-shadow: 0 0 20px #5b2a86;
+    background-color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
     transform: scale(1.2);
     transition: all 0.9s;
-    color: #eff7f6;
+    color: var(--bg-color);
 }
+
 
 .cta {
     display: inline-block;
@@ -232,11 +226,17 @@ body {
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+    justify-content: center;
 }
+
+/* Proyects */
+
+
 
 /* About */
 
 .bg_color {
+    
     width: 100%;
     height: 70%;
     background-color: #eff7f6;
@@ -244,21 +244,24 @@ body {
     z-index: -1;
 }
 
-.about{
+.about {
+    width: 100%;
+    height: 100vh;
+    min-height: 600%;
+    max-height: 100%;
     display: flexbox;
     align-items: center;
     justify-content: center;
     /* min-height: 60vh; */
-    height: 500px;
-    background-color:#5b2a86 ; 
+    /* height: 500px; */
+    background-color: var(--second-bg-color);
     /* height: 100%; */
+    
 }
 
-.wrapper{
-   
-}
+.wrapper {}
 
-.wrapper .carousel{
+.wrapper .carousel {
     display: flex;
     grid-auto-flow: column;
     /* grid-auto-columns: calc(100% /3) -12px ; */
@@ -267,48 +270,47 @@ body {
     justify-content: center;
     overflow: hidden;
     padding: 0;
-    
+    height: 700px;  
+
 }
 
-.carousel .card{
-    height: 200px;
-    width: 130px;
+.carousel .card {
+    height: 300px;
+    width: 230px;
     list-style: none;
-    background-color: #eff7f6 ;
+    background-color: var(--bg-color);
     border-radius: 8px;
     display: flex;
     padding-bottom: 15px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-inline-start: 0px;  
-   
-    animation: scroll 5s linear infinite;
-    -webkit-animation: scroll 5s linear infinite;
+    padding-inline-start: 0px;
+    box-shadow: 16px 14px 20px #000;
+    overflow: hidden;
+    border: 2px solid #0ef ;
+    animation: rotar 2s linear infinite;
+
+}
+
+
+@keyframes rotar {
     
 }
 
-.carousel .card:hover{
+
+.carousel .card:hover {
     /* background-color: #5b2a86; */
-    box-shadow: 0 0 20px #99d98c ;
-    transition: all 0.9s;
+    /*  box-shadow: 0 0 20px #99d98c; */
+    
     color: #02010a;
 }
 
-.carousel{
-    height: 300px;
+.carousel {
+height: 300px;
+    
 }
 
-/* @keyframes scroll {
-    0%{
-        -webkit-transform: translateX();
-        transform: translateX(0);
-    }
-    100%{
-        -webkit-transform: translateX(-200px *7);
-        transform: translateX(calc(-200px * 7 ));
-    }
-} */
 
 .card .img__logo img {
     width: 100px;
@@ -316,17 +318,18 @@ body {
     object-fit: cover;
     justify-content: center;
     align-items: center;
+    
 }
 
-.card h2{
+.card h2 {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 30px 0 5px;
-  
+    color: var(--main-color);
 }
 
-.card span{
-    color: #6a6d78;
+.card span {
+
     font-size: 1.31rem;
 }
 
@@ -335,13 +338,16 @@ body {
 }
 
 .subtitle {
-    padding-top: 50px;
+    padding-top: 70px;
     display: grid;
-    font-size: 4rem;
+    font-size: 7rem;
     /* margin-bottom: 45px; */
-    color: #02010a ;
+    color: var(--text-color);
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #0ef ;
+    background-color: #02010a;
 }
 
 .about__paragraph {
@@ -375,15 +381,15 @@ body {
 
 
 
-/* Knowledge */ 
+/* Knowledge */
 
 .knowledge {
     /* max-width: 100%; */
     margin: 0;
-}   
+}
 
 .subtitle__knowledge {
-    color: #02010a ;
+    color: #02010a;
     font-size: 2rem;
     margin-bottom: 25px;
     margin-left: 80px;
@@ -410,7 +416,7 @@ body {
     line-height: 1.7;
     margin-left: 80px;
     font-size: 1.2em;
-    color: #02010a ;
+    color: #02010a;
     /* background: #c80404; */
     border-radius: 10px;
     /* margin: 30px; */
@@ -554,8 +560,8 @@ body {
 }
 
 .footer__icons:hover {
-    background-color: #99d98c ;
-    box-shadow: 0 0 20px #99d98c ;
+    background-color: #99d98c;
+    box-shadow: 0 0 20px #99d98c;
     transform: scale(1.2);
 }
 
