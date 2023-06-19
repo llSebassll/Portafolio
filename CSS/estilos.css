@@ -246,7 +246,7 @@ body {
 
 .about {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     min-height: 600%;
     max-height: 100%;
     display: flexbox;
@@ -293,12 +293,6 @@ body {
 
 }
 
-
-@keyframes rotar {
-    
-}
-
-
 .carousel .card:hover {
     /* background-color: #5b2a86; */
     /*  box-shadow: 0 0 20px #99d98c; */
@@ -339,15 +333,22 @@ height: 300px;
 
 .subtitle {
     padding-top: 70px;
-    display: grid;
+    display: flex;
     font-size: 7rem;
     /* margin-bottom: 45px; */
-    color: var(--text-color);
+    color: var(--main-color);
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
     border-bottom: 2px solid #0ef ;
-    background-color: #02010a;
+    background-color: var(--second-bg-color);
+    font-weight: 1000;
+}
+
+
+
+.subtitle b{
+    color: var(--text-color);
 }
 
 .about__paragraph {
@@ -386,20 +387,25 @@ height: 300px;
 .knowledge {
     /* max-width: 100%; */
     margin: 0;
+    height: 100vh;
+    background-color: var(--bg-color);
 }
 
 .subtitle__knowledge {
-    color: #02010a;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    margin-left: 80px;
+    color: var(--main-color);
+    font-size: 3rem;
+    /* margin-bottom: 25px;
+    margin-left: 80px; */
+    text-align: center;
+    margin: 50px;
 }
 
 .knowledge__container {
-    display: grid;
+ 
+    display: flexbox;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: #80ed99;
+    /* background-color: #80ed99; */
     margin: 0;
     gap: 1em;
 }
@@ -410,25 +416,28 @@ height: 300px;
     /* padding: 13px 30px; */
     margin: 0 auto;
     pointer-events: none;
+    align-items: center;
+    text-align: center;
 }
 
 .knowledge__paragraph {
     line-height: 1.7;
-    margin-left: 80px;
-    font-size: 1.2em;
-    color: #02010a;
+    margin: 40px;
+    font-size: 1.4em;
+    color: var(--text-color);
     /* background: #c80404; */
     border-radius: 10px;
     /* margin: 30px; */
+    text-align: center;
 }
 
 .knowledge__img {
     width: 100%;
     border-radius: 50%;
     justify-content: center;
-    width: 250px;
-    height: 270px;
-    border: 5px solid #02010a;
+    width: 280px;
+    height: 300px;
+    border: 5px solid var(--main-color);
 }
 
 /* Testimony */
@@ -491,7 +500,7 @@ height: 300px;
 /* Footer */
 
 .footer {
-    background-color: #00000d;
+    background-color: var(--second-bg-color);
 }
 
 .footer__title {
@@ -560,8 +569,8 @@ height: 300px;
 }
 
 .footer__icons:hover {
-    background-color: #99d98c;
-    box-shadow: 0 0 20px #99d98c;
+    background-color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
     transform: scale(1.2);
 }
 
