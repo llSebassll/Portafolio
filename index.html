@@ -17,17 +17,14 @@
     <meta name="title" content="Portafolio Jhon Sebastian Zambrano">
     <meta name="description" content="Hola, soy un desarrollar de software, apacionado por el Frontend">
 
-
 </head>
 
 <body>
 
     <header class="hero">
-        
-        
 
         <nav class="nav container">
-          
+
             <!-- <div class="gradient"></div> -->
             <div class="nav__logo">
                 <!-- <img src="./Images/polo.png" class="nav__logo--page"> -->
@@ -38,6 +35,9 @@
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#proyects" class="nav__links">Proyectos</a>
                 </li>
                 <li class="nav__items">
                     <a href="#skills" class="nav__links">Habilidades</a>
@@ -59,93 +59,123 @@
         </nav>
 
         <section class="hero__container container">
+            <div class="hero__info">
+                <h1 class="hero__title">Hola, soy Sebas.</h1>
+                <!-- <h1 class="hero__title">Un desarrollador.</h1> -->
+                <div class="hero__title3">
+                    <a class="hero__title"> Un<b class="hero__title2" anim-text="desarrollador.">desarrollador.</b> </a>
+                </div>
+         
+                <!-- <button href="#quiensoy" class="cta__hero">Conóceme</button> -->
+                <p class="hero__paragraph">Sebastian Zambrano, estudiante apasionado de ingeniería de sistemas
+                    y computacion. Mi objetivo es contribuir al crecimiento y éxito de la empresa a través de la
+                    implementación de soluciones tecnológicas innovadoras.</p>
+                <a href="#quiensoy" class="cta__hero">Conóceme</a>
+                <!-- <div class="slider-thumb"></div> -->
 
-            <h1 class="hero__title">Hola, soy Sebas.</h1>
-            <h1 class="hero__title">Un desarrollador.</h1>
-            <!-- <button href="#quiensoy" class="cta__hero">Conóceme</button> -->
-            <a href="#quiensoy" class="cta__hero">Conóceme</a>
-            <div class="slider-thumb"></div>
+                <div class="hero__social">
+
+                    <a href="https://www.linkedin.com/in/jhon-sebastian-zambrano-ariza-5b67a8266" target="_blank"
+                        class="footer__icons"><img src="Images/linkedln.svg" class="footer__img"></a>
+                    <a href="https://github.com/llSebassll" target="_blank" class="footer__icons"><img
+                            src="Images/github.svg" class="footer__img"></a>
+                    <a href="mailto:jhon0205zam@gmail.com" target="_blank" class="footer__icons"><img
+                            src="Images/correo.svg" class="footer__img"></a>
+                    <a href="https://wa.me/+573127838827" target="_blank" class="footer__icons"><img
+                            src="Images/whatsapp.svg" class="footer__img"></a>
+                </div>
+
+            </div>
+
+            <!-- <div class="img__hero">
+                <img src="./Images/foto head.png" class="img__hero-foto">
+            </div> -->
+            <!-- 
+            <figure class="img__hero">
+                <img src="./Images/Foto hoja de vida.jpg" class="knowledge__img">
+            </figure> -->
         </section>
 
-        
+
 
     </header>
 
     <main>
 
-        <section class="proyects">  
+        <section class="proyects__container" id="proyects">
+            <div class="proyects">
+                <h1 class="h1__proyect">Mis Proyectos</h1>
+                <ul class="proyect">
+                    <li class="proyect__card">
+                        <a href="https://www.figma.com/file/DrgIHM2xNit6lT8JC5Zkwf/Proyecto-de-Software?type=design&mode=design&t=zlVdH5AatcceMeHV-0"
+                            target="_blank" class="card__img">
+                            <img src="./Images/proyects/Inicio.png" class="card__img-foto"></a>
+                        <h1 class="proyect__h1"> Diseño</h1>
+                    </li>
+                    <!-- <li class="proyect__card">
+                        <div class="card__img"> <img src="./Images/proyects/Inicio.png" class="card__img-foto"></div>
+                        <h1 class="proyect__h1"> Diseño</h1>
+                    </li>
+
+                    <li class="proyect__card">
+                        <div class="card__img"> <img src="./Images/proyects/Inicio.png" class="card__img-foto"></div>
+                        <h1 class="proyect__h1"> Diseño</h1>
+                    </li> -->
+
+
+                </ul>
+            </div>
+
         </section>
 
         <section class="about" id="skills">
             <!-- <a href="" class="nav__title">T<b>oengo habilidades en:</b></a> -->
 
-            <h2 class="subtitle" >Tengo habilidades en:</h2>
+            <h2 class="subtitle">Tengo habilidades en:</h2>
 
-            <div class="wrapper">
-                <ul class="carousel">
+            <div class="carousel">
+                <div class="cards">
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/css-3.png" alt="img__logo"></div>
+                        <div href class="img__logo"> <img src="./Images/habilidades/css.svg" alt="img__logo"></div>
                         <h2>CSS</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/html-5.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/html.svg" alt="img__logo"></div>
                         <h2>HTML</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/js.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/javascript.svg" alt="img__logo"></div>
                         <h2>JAVASCRIPT</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/java.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/java.svg" alt="img__logo"></div>
                         <h2>JAVA</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/mysql.png" alt="img__logo"></div>
-                        <h2>MYSQL</h2>
+                        <div class="img__logo"> <img src="./Images/habilidades/react.svg" alt="img__logo"></div>
+                        <h2>REACT</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/piton.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/python.svg" alt="img__logo"></div>
                         <h2>PYTHON</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/github.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/github.svg" alt="img__logo"></div>
                         <h2>GITHUB</h2>
                     </li>
                     <li class="card">
-                        <div class="img__logo"> <img src="./Images/carrucel/angular.png" alt="img__logo"></div>
+                        <div class="img__logo"> <img src="./Images/habilidades/angular.svg" alt="img__logo"></div>
                         <h2>ANGULAR</h2>
                     </li>
-                </ul>
+                </div>  
             </div>
 
-            <!-- <section class="about__container container"></section>
-            <h2 class="subtitle">Mis habilidades son las siguientes</h2>
-            <p class="about__paragraph">Todo lo que es obligatorio en Css</p>
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./Images/java.svg" class="about__icons">
-                    <h3 class="about__title">Css Lauyouts</h3>
-                    <p class="about__paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="./Images/paint.svg" class="about__icons">
-                    <h3 class="about__title">Colaborar</h3>
-                    <p class="about__paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="./Images/code.svg" class="about__icons">
-                    <h3 class="about__title">Sass</h3>
-                    <p class="about__paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </div> -->
         </section>
 
         <section class="knowledge" id="quiensoy">
-            <div class="knowledge__container container" >
+            <div class="knowledge__container container">
                 <figure class="knowledge__picture">
-                    <img src="./Images/Foto hoja de vida.jpg" class="knowledge__img">
+                    <img src="./Images/foto head2.jpg" class="knowledge__img">
                 </figure>
                 <div class="knowledge__text">
                     <h2 class="subtitle__knowledge">¿Quien Soy?</h2>
@@ -158,7 +188,7 @@
 
                         <!-- <a href="#" class="cta">Contacto</a> -->
                 </div>
-             
+
             </div>
         </section>
 
@@ -181,16 +211,16 @@
                 </nav>
             </section> -->
 
-            <section class="footer__copy container" >
+            <section class="footer__copy container">
                 <div class="footer__social">
 
-                    <a href="https://www.linkedin.com/in/jhon-sebastian-zambrano-ariza-5b67a8266"
+                    <a href="https://www.linkedin.com/in/jhon-sebastian-zambrano-ariza-5b67a8266" target="_blank"
                         class="footer__icons"><img src="Images/linkedln.svg" class="footer__img"></a>
-                    <a href="https://github.com/llSebassll" class="footer__icons"><img src="Images/github.svg"
+                    <a href="https://github.com/llSebassll"  target="_blank" class="footer__icons"><img src="Images/github.svg"
                             class="footer__img"></a>
-                    <a href="mailto:jhon0205zam@gmail.com" class="footer__icons"><img src="Images/correo.svg"
+                    <a href="mailto:jhon0205zam@gmail.com" target="_blank" class="footer__icons"><img src="Images/correo.svg"
                             class="footer__img"></a>
-                    <a href="https://wa.me/+573127838827" class="footer__icons"><img src="Images/whatsapp.svg"
+                    <a href="https://wa.me/+573127838827" target="_blank" class="footer__icons"><img src="Images/whatsapp.svg"
                             class="footer__img"></a>
                 </div>
                 <h3 class="footer__copyright">Derechos reservados &copy; Sebastian Zambrano</h3>
